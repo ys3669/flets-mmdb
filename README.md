@@ -1,6 +1,12 @@
 ```
-ys@hostname:~$ mmdbctl read 2001:a7ff:5e00:0000:0000:0000:0000:0001  mmdbwriter/examples/flets.mmdb 
-{"address_range":"IPNetwork","autonomous_system_organization":"","type_number":2211,"usecase":"IPoE infrastructure","zone":"west"}
+ys@hostname:~$ mmdbctl read 2001:a7ff:5e00:0000:0000:0000:0000:0001  ./flets.mmdb 
+{
+   "address_range":"IPNetwork",
+   "autonomous_system_organization":"",
+   "type_number":2211,
+   "usecase":"IPoE infrastructure",
+   "zone":"west"
+}
 ```
 
 IP通信網サービスのインタフェース

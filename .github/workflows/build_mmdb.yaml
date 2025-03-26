@@ -17,6 +17,9 @@ jobs:
       
       - name: Build MMDB
         run: go run main.go
+        env:
+          ipinfo_token: ${{ secrets.IPINFO_TOKEN }}
+
 
       - name: Diff
         id: diff

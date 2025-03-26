@@ -17,7 +17,11 @@ import (
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Print("Error loading .env file")
+	}
+
+	if os.Getenv("ipinfo_token") == "" {
+		log.Fatal("please set ipinfo_token")
 	}
 
 	writer, err := mmdbwriter.New(
